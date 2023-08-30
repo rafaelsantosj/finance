@@ -15,7 +15,7 @@ map_layer: us_census_places {
 persist_for: "24 hours"
 
 datagroup: retail_banking_etl {
-  sql_trigger: SELECT max(grant_date) FROM retail_banking.loan ;;
+  sql_trigger: SELECT max(date) FROM retail_banking.loan ;;
   max_cache_age: "24 hours"
 }
 
